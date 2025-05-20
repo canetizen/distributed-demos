@@ -1,7 +1,7 @@
-package com.github.canetizen.zookeeper_leader_election;
+package com.github.canetizen.zookeeper_leader_election_algorithm;
 
-import com.github.canetizen.zookeeper_leader_election.impl.LeaderElectionClient;
-import com.github.canetizen.zookeeper_leader_election.service.*;
+import com.github.canetizen.zookeeper_leader_election_algorithm.impl.LeaderElectionClient;
+import com.github.canetizen.zookeeper_leader_election_algorithm.service.*;
 
 /**
  * @author canetizen

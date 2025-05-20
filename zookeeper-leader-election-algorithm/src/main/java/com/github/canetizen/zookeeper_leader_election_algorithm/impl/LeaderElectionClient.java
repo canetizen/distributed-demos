@@ -1,9 +1,9 @@
-package com.github.canetizen.zookeeper_leader_election.impl;
+package com.github.canetizen.zookeeper_leader_election_algorithm.impl;
 
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.Stat;
 
-import com.github.canetizen.zookeeper_leader_election.service.LeaderElectionHandler;
+import com.github.canetizen.zookeeper_leader_election_algorithm.service.LeaderElectionHandler;
 
 import java.io.IOException;
 import java.util.Collections;

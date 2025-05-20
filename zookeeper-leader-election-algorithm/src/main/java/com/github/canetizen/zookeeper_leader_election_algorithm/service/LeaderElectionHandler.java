@@ -1,4 +1,4 @@
-package com.github.canetizen.zookeeper_leader_election.service;
+package com.github.canetizen.zookeeper_leader_election_algorithm.service;
 
 /**
  * @author canetizen

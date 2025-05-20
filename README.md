@@ -11,7 +11,7 @@ All projects use real-world technologies like **Apache ZooKeeper**, and are stru
 * [Repository Structure](#repository-structure)
 * [Build and Run Instructions](#build-and-run-instructions)
 * [Projects](#projects)
-  * [zookeeper\_leader\_election\_algorithm](#zookeeper_leader_election_algorithm)
+  * [zookeeper\-leader\-election\-algorithm](#zookeeper-leader-election-algorithm)
 
 ---
 
@@ -43,7 +43,7 @@ For Java-based projects, Maven is used as the build system.
 
 ### 2. Build a Project
 
-Navigate to the project folder (e.g., `zookeeper_leader_election`) and run:
+Navigate to the project folder (e.g., `zookeeper_leader_election_algorithm`) and run:
 
 ```bash
 mvn clean package
@@ -58,7 +58,7 @@ This will produce a runnable JAR under `target/`.
 Example:
 
 ```bash
-java -jar target/zookeeper-leader-election.jar
+java -jar target/zookeeper-leader-election-algorithm.jar
 ```
 
 You can run multiple instances from different terminals to simulate multiple nodes participating in the leader election.
@@ -67,7 +67,7 @@ You can run multiple instances from different terminals to simulate multiple nod
 
 ## Projects
 
-### zookeeper\_leader\_election\_algorithm
+### zookeeper\-leader\-election\-algorithm
 
 **Description:**
 A distributed leader election demo built using **Apache ZooKeeper**.
@@ -94,7 +94,7 @@ mvn clean package
 **How to Run:**
 
 ```bash
-java -jar target/zookeeper-leader-election.jar
+java -jar target/zookeeper-leader-election-algorithm.jar
 ```
 
 To simulate failover, start multiple terminals, run the app in each, then stop the leader (first one started).
