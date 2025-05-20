@@ -1,0 +1,43 @@
+# Maven build outputs
+/target/
+
+# Maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# Logs
+*.log
+
+# Eclipse IDE files
+*.classpath
+*.project
+*.settings/
+.project
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VSCode files
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.bak
+
+# Test reports
+surefire-reports/
+failsafe-reports/
