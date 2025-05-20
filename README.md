@@ -11,7 +11,7 @@ All projects use real-world technologies like **Apache ZooKeeper**, and are stru
 * [Repository Structure](#repository-structure)
 * [Build and Run Instructions](#build-and-run-instructions)
 * [Projects](#projects)
-  * [zookeeper\_leader\_election](#zookeeper_leader_election)
+  * [zookeeper\_leader\_election\_algorithm](#zookeeper_leader_election_algorithm)
 
 ---
 
@@ -67,7 +67,7 @@ You can run multiple instances from different terminals to simulate multiple nod
 
 ## Projects
 
-### zookeeper\_leader\_election
+### zookeeper\_leader\_election\_algorithm
 
 **Description:**
 A distributed leader election demo built using **Apache ZooKeeper**.
