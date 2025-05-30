@@ -12,6 +12,8 @@ All projects use real-world technologies like **Apache ZooKeeper**, and are stru
 * [Build and Run Instructions](#build-and-run-instructions)
 * [Projects](#projects)
   * [zookeeper\-leader\-election\-algorithm](#zookeeper-leader-election-algorithm)
+  * [kafka\-failover\-simulation](#kafka\-failover\-simulation)
+  
 
 ---
 
