@@ -1,0 +1,69 @@
+#
+# Author: canetizen
+# Created on Sat May 31 2025
+# Description: Docker initializer for dummy servers and HAProxy instances.
+#
+
+version: "3.8"
+services:
+  server1:
+    build: .
+    environment:
+      - PORT=8081
+    container_name: server1
+    networks:
+      - backend
+
+  server2:
+    build: .
+    environment:
+      - PORT=8082
+    container_name: server2
+    networks:
+      - backend
+
+  server3:
+    build: .
+    environment:
+      - PORT=8083
+    container_name: server3
+    networks:
+      - backend
+
+
+  backup-server:
+    build: .
+    environment:
+      - PORT=8084
+    container_name: backup-server
+    networks:
+      - backend
+
+  haproxy-l4:
+    image: haproxy:2.9
+    volumes:
+      - ./config/haproxy-l4.cfg:/usr/local/etc/haproxy/haproxy.cfg
+    ports:
+      - "8084:80"
+    depends_on:
+      - server1
+      - server2
+      - server3
+    networks:
+      - backend
+
+  haproxy-l7:
+    image: haproxy:2.9
+    volumes:
+      - ./config/haproxy-l7.cfg:/usr/local/etc/haproxy/haproxy.cfg
+    ports:
+      - "8087:80"
+    depends_on:
+      - server1
+      - server2
+      - server3
+    networks:
+      - backend
+
+networks:
+  backend:
