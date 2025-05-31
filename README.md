@@ -1,15 +1,15 @@
 # distributed-demos
 
 **Description:**
-A collection of example projects demonstrating core concepts in **distributed systems** such as leader election, coordination, failover, and consensus.
-All projects use real-world technologies like **Apache ZooKeeper**, and are structured to emphasize clarity, and correctness.
+A curated set of example projects that illustrate foundational ideas in distributed systems—such as coordination, leader election, failover, consensus, and scalable load balancing—using real-world, industry-standard tools and frameworks. The projects are designed for clarity, correctness, and ease of experimentation.
 
 ---
 
 ## Table of Contents
 
 * [Repository Structure](#repository-structure)
-* [Build and Run Instructions](#build-and-run-instructions)
+* [Install Requirements](#install-requirements)
+* [Build and Run a Project](#build-and-run-a-project)
 * [Projects](#projects)
   * [zookeeper\-leader\-election\-algorithm](#zookeeper-leader-election-algorithm)
   * [kafka\-failover\-simulation](#kafka\-failover\-simulation)
@@ -21,49 +21,34 @@ All projects use real-world technologies like **Apache ZooKeeper**, and are stru
 
 ```plaintext
 distributed-demos/
-├── example_project/              # Java Maven project
-│   ├── src/                      # Java source files
-│   ├── pom.xml                   # Maven build file
-├── ...                           # Other projects
-├── README.md                     # This file
+├── example_project/                  # Example project folder (language and tech may vary)
+│   ├── src/                          # Source files (Java, Python, etc.)
+│   ├── project config/build files    # (pom.xml, requirements.txt, Dockerfile, etc.)
+│   ├── ...                           # Other project-related directories/files
+├── ...                               # Additional projects
+├── README.md                         # This file
 ```
 
 ---
 
-## Build and Run Instructions
-
-Each project is independently buildable and runnable.
-For Java-based projects, Maven is used as the build system.
-
-### 1. Install Requirements
+### Install Requirements
 
 * Java (version 17+ recommended)
-* Apache ZooKeeper running at `localhost:2181`
-* Maven (`sudo apt install maven` on Ubuntu)
+* Maven (for Java projects)
 
 ---
 
-### 2. Build a Project
-
-Navigate to the project folder (e.g., `zookeeper_leader_election_algorithm`) and run:
+### Build and Run a Project
+Navigate to the desired project folder (e.g., `zookeeper_leader_election_algorithm`) and build the project using the appropriate tool for the language or framework. For example, for a Maven-based Java project:
 
 ```bash
 mvn clean package
-```
-
-This will produce a runnable JAR under `target/`.
-
----
-
-### 3. Run a Project
-
-Example:
-
-```bash
 java -jar target/zookeeper-leader-election-algorithm.jar
 ```
 
-You can run multiple instances from different terminals to simulate multiple nodes participating in the leader election.
+For other languages or environments, use the corresponding build and run commands (such as `python`, `go run`, `npm install && npm start`, etc.).
+
+Unless otherwise specified (e.g., via a provided runner script or Docker Compose configuration), projects can be built and executed using the standard workflow for their respective technology.
 
 ---
 
