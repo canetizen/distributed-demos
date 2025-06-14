@@ -1,0 +1,56 @@
+services:
+  node1:
+    container_name: node1
+    build:
+      context: .
+      dockerfile: node/Dockerfile
+    environment:
+      - NODE_NAME=node1
+      - CYCLONEDDS_URI=file:///shared/cyclonedds.xml
+    volumes:
+      - ./shared:/shared
+      - ./logs:/logs
+    network_mode: host
+    entrypoint: ["./app"]
+
+  node2:
+    container_name: node2
+    build:
+      context: .
+      dockerfile: node/Dockerfile
+    environment:
+      - NODE_NAME=node2
+      - CYCLONEDDS_URI=file:///shared/cyclonedds.xml
+    volumes:
+      - ./shared:/shared
+      - ./logs:/logs
+    network_mode: host
+    entrypoint: ["./app"]
+
+  node3:
+    container_name: node3
+    build:
+      context: .
+      dockerfile: node/Dockerfile
+    environment:
+      - NODE_NAME=node3
+      - CYCLONEDDS_URI=file:///shared/cyclonedds.xml
+    volumes:
+      - ./shared:/shared
+      - ./logs:/logs
+    network_mode: host
+    entrypoint: ["./app"]
+
+  node4:
+    container_name: node4
+    build:
+      context: .
+      dockerfile: node/Dockerfile
+    environment:
+      - NODE_NAME=node4
+      - CYCLONEDDS_URI=file:///shared/cyclonedds.xml
+    volumes:
+      - ./shared:/shared
+      - ./logs:/logs
+    network_mode: host
+    entrypoint: ["/bin/sh", "-c", "sleep 10 && ./app"]

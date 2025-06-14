@@ -1,0 +1,6 @@
+struct SensorData {
+  string sensor_id;
+  float temperature;
+  float humidity;
+  int32 timestamp;
+};
